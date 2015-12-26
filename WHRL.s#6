@@ -1587,9 +1587,6 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <pad name="P$3" x="-2.54" y="0" drill="1.1" diameter="2"/>
 <pad name="P$2" x="0" y="0" drill="1.1" diameter="2"/>
 <pad name="P$1" x="2.54" y="0" drill="1.1" diameter="2" shape="square"/>
-<text x="2.286" y="-2.032" size="0.8128" layer="21">1</text>
-<text x="-0.254" y="-2.032" size="0.8128" layer="21">2</text>
-<text x="-2.794" y="-2.032" size="0.8128" layer="21">3</text>
 </package>
 </packages>
 <symbols>
@@ -1715,10 +1712,10 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <part name="LED" library="mb_supply" deviceset="PAD" device=""/>
 <part name="D2" library="mb_diodes" deviceset="LED" device="3MM"/>
 <part name="R5" library="mb_resistors" deviceset="3MM" device=".2" value="4k7"/>
-<part name="C6" library="mb_caps-electro" deviceset="050" device="1" value="10uF"/>
+<part name="C6" library="mb_caps-electro" deviceset="050" device="1"/>
 <part name="DRIVE" library="mb_9mm Pot" deviceset="9MM" device="POT_9MM_HOLES" value="B1M"/>
 <part name="VOL" library="mb_9mm Pot" deviceset="9MM" device="POT_9MM_HOLES" value="A10k"/>
-<part name="G2" library="mb_supply" deviceset="GND(T)" device=""/>
+<part name="GND2" library="mb_supply" deviceset="GND(T)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1756,7 +1753,7 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <instance part="C6" gate="1" x="109.22" y="53.34" rot="R90"/>
 <instance part="DRIVE" gate="G$1" x="50.8" y="30.48" rot="R90"/>
 <instance part="VOL" gate="G$1" x="121.92" y="38.1"/>
-<instance part="G2" gate="GND" x="25.4" y="68.58"/>
+<instance part="GND2" gate="GND" x="25.4" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -1828,7 +1825,7 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <segment>
 <pinref part="C4" gate="G$1" pin="-"/>
 <wire x1="25.4" y1="71.12" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="G2" gate="GND" pin="GND"/>
+<pinref part="GND2" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1958,9 +1955,6 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <approved hash="101,1,88.9,86.36,IC1D,O,,,,"/>
 <approved hash="101,1,114.3,86.36,IC1E,O,,,,"/>
 <approved hash="101,1,139.7,86.36,IC1F,O,,,,"/>
-<approved hash="104,1,53.34,93.98,IC1P,VSS,GND,,,"/>
-<approved hash="104,1,53.34,78.74,IC1P,VDD,N$1,,,"/>
-<approved hash="113,1,24.7398,103.116,LED,,,,,"/>
 </errors>
 </schematic>
 </drawing>

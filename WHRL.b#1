@@ -544,7 +544,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C4" library="mb_caps-electro" package="080_035_1" value="330uF" x="28.575" y="8.763" smashed="yes" rot="R270">
 <attribute name="NAME" x="26.416" y="10.287" size="1.27" layer="25" ratio="12" rot="R270"/>
 </element>
-<element name="IC1" library="mb_ics" package="DIL16" value="CD4049UBE" x="19.05" y="11.43" rot="R270"/>
+<element name="IC1" library="mb_ics" package="DIL16" value="CD4049UBE" x="19.05" y="11.43" smashed="yes" rot="R270">
+<attribute name="VALUE" x="17.78" y="18.923" size="1.27" layer="27" ratio="12" rot="R270"/>
+</element>
 <element name="D1" library="mb_diodes" package="DO41-2" value="1N4001" x="29.21" y="17.272" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.845" y="16.8148" size="1.27" layer="25" ratio="12" rot="R90"/>
 </element>

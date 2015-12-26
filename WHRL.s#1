@@ -1587,9 +1587,6 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <pad name="P$3" x="-2.54" y="0" drill="1.1" diameter="2"/>
 <pad name="P$2" x="0" y="0" drill="1.1" diameter="2"/>
 <pad name="P$1" x="2.54" y="0" drill="1.1" diameter="2" shape="square"/>
-<text x="2.286" y="-2.032" size="0.8128" layer="21">1</text>
-<text x="-0.254" y="-2.032" size="0.8128" layer="21">2</text>
-<text x="-2.794" y="-2.032" size="0.8128" layer="21">3</text>
 </package>
 </packages>
 <symbols>
