@@ -1703,7 +1703,6 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <part name="D1" library="mb_diodes" deviceset="1N400X" device=".2" value="1N4001"/>
 <part name="+9V" library="mb_supply" deviceset="+9V(T)" device=""/>
 <part name="G" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="GND8" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND9" library="gm-supply" deviceset="GND" device=""/>
 <part name="OUT" library="mb_supply" deviceset="OUT(T)" device=""/>
 <part name="R6" library="mb_resistors" deviceset="3MM" device=".2" value="1.5M"/>
@@ -1716,6 +1715,7 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <part name="C6" library="mb_caps-electro" deviceset="050" device="1"/>
 <part name="DRIVE" library="mb_9mm Pot" deviceset="9MM" device="POT_9MM_HOLES" value="B1M"/>
 <part name="VOL" library="mb_9mm Pot" deviceset="9MM" device="POT_9MM_HOLES" value="A10k"/>
+<part name="GND2" library="mb_supply" deviceset="GND(T)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1740,7 +1740,6 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <instance part="D1" gate="1" x="35.56" y="78.74" rot="R90"/>
 <instance part="+9V" gate="+9V" x="2.54" y="86.36" rot="R90"/>
 <instance part="G" gate="GND" x="53.34" y="101.6" rot="R180"/>
-<instance part="GND8" gate="GND" x="25.4" y="68.58"/>
 <instance part="GND9" gate="GND" x="35.56" y="68.58"/>
 <instance part="OUT" gate="G$1" x="137.16" y="38.1"/>
 <instance part="IC1" gate="P" x="53.34" y="86.36" rot="MR180"/>
@@ -1754,6 +1753,7 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <instance part="C6" gate="1" x="109.22" y="53.34" rot="R90"/>
 <instance part="DRIVE" gate="G$1" x="50.8" y="30.48" rot="R90"/>
 <instance part="VOL" gate="G$1" x="121.92" y="38.1"/>
+<instance part="GND2" gate="GND" x="25.4" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -1803,11 +1803,6 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="GND8" gate="GND" pin="GND"/>
-<pinref part="C4" gate="G$1" pin="-"/>
-<wire x1="25.4" y1="71.12" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND9" gate="GND" pin="GND"/>
 <pinref part="D1" gate="1" pin="A"/>
 <wire x1="35.56" y1="71.12" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
@@ -1826,6 +1821,11 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <pinref part="GND3" gate="GND" pin="GND"/>
 <wire x1="121.92" y1="27.94" x2="121.92" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="VOL" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="-"/>
+<wire x1="25.4" y1="71.12" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$4" class="0">

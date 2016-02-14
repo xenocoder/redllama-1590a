@@ -1715,7 +1715,7 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <part name="C6" library="mb_caps-electro" deviceset="050" device="1"/>
 <part name="DRIVE" library="mb_9mm Pot" deviceset="9MM" device="POT_9MM_HOLES" value="B1M"/>
 <part name="VOL" library="mb_9mm Pot" deviceset="9MM" device="POT_9MM_HOLES" value="A10k"/>
-<part name="GND2" library="mb_supply" deviceset="GND(T)" device=""/>
+<part name="G2" library="mb_supply" deviceset="GND(T)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1753,7 +1753,7 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <instance part="C6" gate="1" x="109.22" y="53.34" rot="R90"/>
 <instance part="DRIVE" gate="G$1" x="50.8" y="30.48" rot="R90"/>
 <instance part="VOL" gate="G$1" x="121.92" y="38.1"/>
-<instance part="GND2" gate="GND" x="25.4" y="68.58"/>
+<instance part="G2" gate="GND" x="25.4" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -1825,7 +1825,7 @@ MKP2 63, 100V: 1000pF - 0.015uF; MKS2 50V: 0.33 - 0.47uF; 63V: 1000pF - 0.22uF;<
 <segment>
 <pinref part="C4" gate="G$1" pin="-"/>
 <wire x1="25.4" y1="71.12" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="GND" pin="GND"/>
+<pinref part="G2" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$4" class="0">
